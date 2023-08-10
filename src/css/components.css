@@ -1,0 +1,15 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--blue-color);
+  background-color: var(--white-color);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
