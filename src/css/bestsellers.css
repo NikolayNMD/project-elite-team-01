@@ -30,7 +30,7 @@
 .bestsellers-item {
   margin-top: 30px;
 }
-.mobile {
+.mobile-b {
   display: none;
 }
 img {
@@ -43,7 +43,7 @@ img {
     padding-left: 32px;
     padding-right: 32px;
   }
-  .mobile {
+  .mobile-b {
     display: block;
   }
 
