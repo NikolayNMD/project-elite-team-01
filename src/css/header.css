@@ -47,6 +47,7 @@
   width: 100vw;
   height: 100vh;
   background-color: white;
+  z-index: 2;
 }
 
 .mob-menu-header {
@@ -162,6 +163,10 @@
   }
 
   .mob-menu-open {
+    display: none;
+  }
+
+  .mob-menu {
     display: none;
   }
 
