@@ -90,8 +90,8 @@
 
 @media screen and (min-width: 1440px) {
   .price-container {
-    max-width: 1096px;
-    padding-left: 60px;
-    padding-right: 60px;
+    width: 1096px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
