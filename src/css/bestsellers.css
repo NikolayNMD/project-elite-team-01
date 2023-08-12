@@ -58,12 +58,12 @@ img {
   .bestsellers-title {
     font-size: 32px;
     line-height: 1.4;
-    text-transform: uppercase;
     margin-bottom: 30px;
   }
 
   .underimage-title {
     font-size: 18px;
+    margin-top: 15px;
   }
 
   .underimage-text {
@@ -109,5 +109,4 @@ img {
     .bestsellers-item {
         width: calc((100% - 20px) / 2);
     }
-
 }
