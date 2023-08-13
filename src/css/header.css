@@ -11,11 +11,15 @@
   overflow: hidden;
 }
 
+.header {
+  background-color: var(--light-blue-color);
+}
+
 .header-container {
   padding: 28px 16px;
   display: flex;
   align-items: center;
-  background-color: var(--light-blue-color);
+  /* background-color: var(--light-blue-color); */
 }
 
 .header-logo-icon {
