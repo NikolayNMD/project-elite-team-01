@@ -1,56 +1,88 @@
-@ -1,55 +0,0 @@
 <section class="subscription">
-    <div class="subscription-container">
-        <div class="subscription-div">
-            <h1 class="subscription-title text-focus-in"> Newsletter </h1>
-            <div class="subscription-form-wrap">
-                <p class="subscription-subtitle">
-                    Every week we will send you new designs and information about sales.
-                </p>
-                <form class="subscription-form">
-                    <div class="subscription-imput-div">
-                        <label class="subscription-lable">
-                            <input type="text" name="user-name" id="user-name" class="subscription-input"
-                                placeholder="Name" />
-                        </label>
-                    </div>
-                    <div class="subscription-imput-div">
-                        <label class="subscription-lable">
-                            <input type="email" name="user-email" class="subscription-input" placeholder="E-mail"
-                                id="user-email" minlength="2" maxlength="16" />
-                        </label>
-                    </div>
+  <div class="container subscription-container">
+    <div class="subscription-div">
+      <h1 class="subscription-title text-focus-in">Newsletter</h1>
+      <div class="subscription-form-wrap">
+        <p class="subscription-subtitle">
+          Every week we will send you new designs and information about sales.
+        </p>
+        <form class="subscription-form">
+          <div class="subscription-imput-div">
+            <label class="subscription-lable">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="subscription-input"
+                placeholder="Name"
+              />
+            </label>
+          </div>
+          <div class="subscription-imput-div">
+            <label class="subscription-lable">
+              <input
+                type="email"
+                name="user-email"
+                class="subscription-input"
+                placeholder="E-mail"
+                id="user-email"
+                minlength="2"
+                maxlength="16"
+              />
+            </label>
+          </div>
 
-                    <div class="subscription-check-div">
-                        <input type="checkbox" name="user-subscription" id="user-subscription" value="true"
-                            class="subscription-check visually-hidden" />
-                        <label for="user-subscription" class="subscription-check-text">
-
-                            <span class="subscription-check-span">
-                                <svg class="subscription-icon" width="13" height="13">
-                                    <use href="./images/icons-01.svg#icon-subscripion-checkbox">
-
-                                    </use>
-                                </svg>
-                            </span> Agree to subscribe to the newsletter
-                        </label>
-                    </div>
-                    <button type="submit" class="subscription-form-btm">
-                        Send
-                    </button>
-                </form>
-            </div>
-        </div>
-
-        <picture class="subscription-img">
-            <source media="(max-width:767px)"
-                srcset="./img/subscription-mobile.jpg 1x, ./img/subscription-mobile@2x.jpg 2x" width="343" />
-            <source media="(min-width:768px) and (max-width:1158px)"
-                srcset="./img/subscription-tab.jpg 1x, ./img/subscription-tab@2x.jpg 2x" width="704" />
-            <source media="(min-width:1158px)"
-                srcset="./img/subscription-desk.jpg 1x, ../img/subscription-desk@2x.jpg  2x" width="460" />
-            <img src="./img/subscription-tab.jpg" srcset="../img/about-tab@2x.jpg 2x" width="704"
-                height="396" alt="book table chair" />
-        </picture>
+          <div class="subscription-check-div">
+            <input
+              type="checkbox"
+              name="user-subscription"
+              id="user-subscription"
+              value="true"
+              class="subscription-check visually-hidden"
+            />
+            <label for="user-subscription" class="subscription-check-text">
+              <span class="subscription-check-span">
+                <svg class="subscription-icon" width="13" height="13">
+                  <use href="../img/icons-01.svg#icon-check"></use>
+                </svg>
+              </span>
+              Agree to subscribe to the newsletter
+            </label>
+          </div>
+          <button type="submit" class="subscription-form-btm">Send</button>
+        </form>
+      </div>
     </div>
+
+    <picture class="subscription-img">
+      <source
+        media="(max-width:767px)"
+        srcset="
+          ./img/subscription-mobile.jpg    1x,
+          ./img/subscription-mobile@2x.jpg 2x
+        "
+        width="343"
+      />
+      <source
+        media="(min-width:768px) and (max-width:1439px)"
+        srcset="./img/subscription-tab.jpg 1x, ./img/subscription-tab@2x.jpg 2x"
+        width="704"
+      />
+      <source
+        media="(min-width:1440px)"
+        srcset="
+          ./img/subscription-desk.jpg    1x,
+          ./img/subscription-desk@2x.jpg 2x
+        "
+        width="460"
+      />
+      <img
+        src="./img/subscription-tab.jpg"
+        srcset="./img/subscription-tab@2x.jpg 2x"
+        width="704"
+        height="396"
+        alt="book table chair"
+      />
+    </picture>
+  </div>
 </section>

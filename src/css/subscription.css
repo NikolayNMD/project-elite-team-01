@@ -1,74 +1,31 @@
-:root {
-    --blue-color: #0a224a;
-    --grey-color: #7a7a7a;
-    --silver-color: #b6b6b6;
-    --light-grey-color: #d9d9d9;
-    --light-blue-color: #f7faff;
-    --white-color: #ffffff;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-/*!-------скидання стилів--------*/
-p,
-h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-img {
-    display: block;
-}
-
-img .link {
-    text-decoration: none;
-    max-width: 100%;
-    height: auto;
-}
-
-.link {
-    text-decoration: none;
-}
-
-
 /*?----------------SUBSCRIPTION---------------*/
 
 .subscription {
-    font-family: "Roboto", sans-serif;
-    color: #0A224A;
-    background-color: #ffffff;
-    padding: 64px 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #0a224a;
+  background-color: #ffffff;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .subscription-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
 }
 
 .subscription-title {
-    text-align: center;
-    padding-top: 0;
-    color: var(--blue-color, #0A224A);
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+  text-align: center;
+  padding-top: 0;
+  color: var(--blue-color);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 /* ----------------------------------------
@@ -76,270 +33,282 @@ img .link {
  * ----------------------------------------*/
 
 .text-focus-in {
-    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 @-webkit-keyframes text-focus-in {
-    0% {
-        -webkit-filter: blur(12px);
-        filter: blur(12px);
-        opacity: 0;
-    }
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
 
-    100% {
-        -webkit-filter: blur(0px);
-        filter: blur(0px);
-        opacity: 1;
-    }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes text-focus-in {
-    0% {
-        -webkit-filter: blur(12px);
-        filter: blur(12px);
-        opacity: 0;
-    }
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
 
-    100% {
-        -webkit-filter: blur(0px);
-        filter: blur(0px);
-        opacity: 1;
-    }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 
-
 .subscription-form-wrap {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .subscription-subtitle {
-    color: var(--blue-color, #0A224A);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5em;
-    margin-bottom: 30px;
+  color: var(--blue-color, #0a224a);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 30px;
 }
 
 .subscription-input {
-    margin: 0 auto;
-    width: 100%;
-    height: 50px;
-    color: var(--blue-color, #0A224A);
-    border: 1px solid var(--silver-color, #B6B6B6);
-    background-color: transparent;
-    padding: 11px 20px;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5em;
-    margin-bottom: 20px;
-    align-items: center;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* background-color: transparent;*/
-    outline: transparent;
+  margin: 0 auto;
+  width: 100%;
+  height: 50px;
+  color: var(--blue-color, #0a224a);
+  border: 1px solid var(--silver-color, #b6b6b6);
+  background-color: transparent;
+  padding: 11px 20px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  align-items: center;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* background-color: transparent;*/
+  outline: transparent;
 }
 
 .subscription-input::placeholder {
-    color: var(--light-grey-color, #D9D9D9);
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5em;
+  color: var(--light-grey-color, #d9d9d9);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
 }
 
 /*imput:valid,*/
 imput:hover,
 imput:focus {
-    border: 1px solid #0A224A;
-    color: var(--blue-color, #0A224A);
+  border: 1px solid #0a224a;
+  color: var(--blue-color, #0a224a);
 }
 
 input:invalid {
-    border: 1px solid #E74A3B;
-    color: #E74A3B;
+  border: 1px solid #e74a3b;
+  color: #e74a3b;
 }
 
 .subscription-check-text {
-    color: #7A7A7A;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5em;
+  color: #7a7a7a;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+@media (max-width: 325px) {
+  .subscription-check-text {
+    font-size: 15px;
+  }
 }
 
 .subscription-check-div {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
-.subscription-check {}
+/* .subscription-check {} */
 
 .subscription-check-span {
-    margin-right: 8px;
-    display: inline-flex;
-    width: 25px;
-    height: 25px;
-    border: 1px solid #B6B6B6;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 8px;
+  display: inline-flex;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #b6b6b6;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscription-check:checked+.subscription-check-text span {
-    background-color: #0A224A;
-    border: none;
-    fill: #fff;
+.subscription-check-div
+  input[type='checkbox']:checked
+  + .subscription-check-text
+  .subscription-check-span {
+  background-color: #0a224a;
+  border: none;
+  fill: #fff;
 }
 
 .subscription-form-btm {
-    display: block;
-    min-width: 224px;
-    height: 50px;
-    background-color: var(--blue-color, #0A224A);
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5em;
-    text-decoration: none;
-    color: var(--white, #fff);
+  display: block;
+  min-width: 224px;
+  height: 50px;
+  background-color: var(--blue-color);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-decoration: none;
+  color: var(--white, #fff);
 }
 
 .subscription-form-btm:hover,
 .subscription-form-btm:focus {
-    background-color: #061835;
+  background-color: #061835;
 }
 
 .subscription-form-btm-link {
-    color: var(--white-color, #ffffff);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5em;
-    text-decoration: none;
+  color: var(--white-color, #ffffff);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-decoration: none;
 }
 
 .subscription-img {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
-@media screen and (min-width: 375px) {
-    .container {
-        max-width: 375px;
-    }
-}
+/* @media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+} */
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
-    .subscription {
-        padding: 100px 32PX;
-    }
+  .subscription {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
-    .subscription-container {
-        margin: 0;
-        padding: 0;
-        justify-content: start;
-        align-items: start;
-    }
+  .subscription-container {
+    /* margin: 0;
+    padding: 0; */
+    /* justify-content: start; */
+    align-items: start;
+  }
 
-    .subscription-title {
-        text-align: left;
-        font-size: 32px;
-        line-height: 1.4em;
-        margin-bottom: 30px;
-    }
+  .subscription-title {
+    text-align: left;
+    font-size: 32px;
+    line-height: 1.4em;
+    margin-bottom: 30px;
+  }
 
-    .subscription-form-wrap {
-        margin-bottom: 64px;
-    }
+  .subscription-form-wrap {
+    margin-bottom: 64px;
+  }
 
-    .subscription-subtitle {
-        font-size: 18px;
-        max-width: 536px;
-    }
+  .subscription-subtitle {
+    font-size: 18px;
+    max-width: 536px;
+  }
 
-    .subscription-input {
-        display: flex;
-        max-width: 536px;
-        margin-left: 0;
-    }
+  .subscription-input {
+    display: flex;
+    max-width: 536px;
+    margin-left: 0;
+  }
 
-    .subscription-check-text {
-        font-size: 18px;
-    }
+  .subscription-check-text {
+    font-size: 18px;
+  }
 
-    .subscription-check-div {
-        margin-bottom: 30px;
-    }
+  .subscription-check-div {
+    margin-bottom: 30px;
+  }
 
-    .subscription-check {
-        border: 1px solid #B6B6B6;
-    }
+  .subscription-check {
+    border: 1px solid #b6b6b6;
+  }
 
-    .subscription-form-btm {}
+  /* .subscription-form-btm {} */
 
-    .subscription-form-btm:hover,
-    .subscription-form-btm:focus {}
+  /* .subscription-form-btm:hover,
+    .subscription-form-btm:focus {} */
 
-    .subscription-form-btm-link {
-        font-size: 18px;
-        line-height: 1.33em;
-    }
+  .subscription-form-btm-link {
+    font-size: 18px;
+    line-height: 1.33em;
+  }
 
-    .subscription-img {
-        display: block;
-        width: 704px;
-        height: 396px;
-    }
-
-
+  .subscription-img {
+    display: block;
+    width: 704px;
+    height: 396px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
-    }
+  .container {
+    max-width: 1440px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 
-    .subscription {
-        padding: 100px 172px 86px 172px;
+  .subscription {
+    padding-bottom: 86px;
+  }
 
-    }
+  .subscription-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    .subscription-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+  .subscription-div {
+    padding: 0;
+    justify-content: start;
+    margin-right: 0;
+  }
 
-    .subscription-div {
-        padding: 0;
-        justify-content: start;
-        margin-right: 0;
-    }
+  .subscription-title {
+    margin-top: 0;
+    margin-bottom: 31px;
+  }
 
-    .subscription-title {
-        margin-top: 0;
-        margin-bottom: 31px;
-    }
+  .subscription-form-wrap {
+    margin-bottom: 0;
+  }
 
-    .subscription-form-wrap {
-        margin-bottom: 0;
-    }
-
-    .subscription-subtitle {}
+  /* .subscription-subtitle {}
 
     .subscription-input {}
 
@@ -356,19 +325,19 @@ input:invalid {
     .subscription-check {}
 
 
-    .subscription-form-btm {}
+    .subscription-form-btm {} */
 
-    .subscription-form-btm:hover,
-    .subscription-form-btm:focus {
-        background-color: #061835;
-    }
+  .subscription-form-btm:hover,
+  .subscription-form-btm:focus {
+    background-color: #061835;
+  }
 
-    .subscription-form-btm-link {}
+  /* .subscription-form-btm-link {} */
 
-    .subscription-img {
-        display: block;
-        width: 460px;
-        height: 410px;
-        margin-left: 100px;
-    }
+  .subscription-img {
+    display: block;
+    width: 460px;
+    height: 410px;
+    margin-left: 100px;
+  }
 }
