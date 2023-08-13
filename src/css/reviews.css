@@ -45,6 +45,11 @@
   line-height: 1.78;
   text-transform: uppercase;
 }
+@media (max-width: 375px) {
+  .reviews-clients {
+    font-size: 15px;
+  }
+}
 .clients-data {
   color: var(--blue-color);
   text-align: left;
