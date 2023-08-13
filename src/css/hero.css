@@ -91,9 +91,6 @@
     padding-left: 32px;
     padding-right: 32px;
   }
-  /* .container {
-        max-width: 100%;     
-       } */
 
   .section-hero {
     max-width: 1440px;
@@ -165,13 +162,13 @@
     background-repeat: no-repeat;
     background-position: left bottom, right bottom;
   }
-  /* @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-images-one {
     background-image: url(../img/hero-desk-1@2x.jpg), url(../img/hero-desk-2@2x.jpg);
   }
-} */
+}
 
   .hero-images-two {
     display: flex;
