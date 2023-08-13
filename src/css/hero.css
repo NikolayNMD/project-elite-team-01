@@ -1,21 +1,9 @@
-:root {
-  --blue-color: #0a224a;
-  --grey-color: #7a7a7a;
-  --silver-color: #b6b6b6;
-  --light-grey-color: #d9d9d9;
-  --light-blue-color: #f7faff;
-  --white-color: #ffffff;
-}
 
 .section-hero {
-  /* background-color: var(--light-grey-color); */
   max-width: 1440px;
+  margin: 0 auto;
 }
-.container {
-  max-width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-}
+
 .title-one {
   color: var(--blue-color);
   font-family: Playfair Display;
@@ -54,12 +42,17 @@
   padding: 12px 65px;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #061835; 
 }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .section-hero {
     background-image: url(../img/hero-mobile-jpg.jpg);
-    max-width: 1440px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
