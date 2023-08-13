@@ -52,7 +52,7 @@
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .section-hero {
     background-image: url(../img/hero-mobile-jpg.jpg);
-    background-size: cover;
+    background-size: 475px;
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 140px;
