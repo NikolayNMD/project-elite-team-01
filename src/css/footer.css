@@ -18,10 +18,14 @@
   display: flex;
   gap: 16px;
 }
+.footer-social-link {
+  display: flex;
+}
 .footer-social-svg {
   width: 28px;
   height: 28px;
   fill: var(--white-color);
+  display: block;
 }
 
 .footer-nav {
@@ -101,17 +105,12 @@
     position: relative;
   }
   .footer-social {
-    display: block;
     margin-bottom: 32px;
-  }
-  .footer-social-list {
-    position: absolute;
-    top: 0;
-    right: 32px;
   }
   .footer-social-svg {
     width: 40px;
     height: 40px;
+    display: block;
   }
   .footer-nav {
     position: absolute;
@@ -154,7 +153,6 @@
   }
   .footer-social-list {
     gap: 30px;
-    right: 60px;
   }
   .footer-nav {
     right: 0;
@@ -171,16 +169,16 @@
   .footer-address {
     display: flex;
     gap: 87px;
-    margin-bottom: -35px;
-  }
-  .tel-container {
-    position: relative;
-  }
-  .email-mob {
-    position: absolute;
-    left: 224px;
+    margin-bottom: 35px;
   }
   .footer-address-list {
     margin-bottom: 0;
   }
+  .footer-tel-list {
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    max-height: 80px;
+    column-gap: 82px;
+  }
+
 }
