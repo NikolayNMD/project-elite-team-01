@@ -87,7 +87,7 @@
   .section-hero {
     max-width: 1440px;
     padding-top: 64px;
-    padding-bottom: 166px;
+    padding-bottom: 0;
     background-image: none;
   }
 
@@ -96,9 +96,14 @@
     flex-direction: row;
     gap: 32px;
     width: 100%;
-    height: 531px;
+    height: 100%;
     flex-wrap: wrap;
   }
+
+  .title-one {
+    margin-bottom: 0;
+  }
+  
   .hero-images-one {
     display: flex;
     width: 699px;
@@ -148,6 +153,10 @@
     gap: 24px;
     width: 100%;
     height: 530px;
+  }
+
+  .title-one {
+    margin-bottom: 0;
   }
   .hero-images-one {
     display: flex;
