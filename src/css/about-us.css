@@ -4,15 +4,14 @@
 }
 
 .about-our-text::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 50%;
-  width: 30px;
-  height: 1px;
-  background-color: #0a224a;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    width: 30px;
+    height: 1px;
+    background-color: #0a224a;
 }
-
 .about-our-text {
   color: #0a224a;
   font-family: Roboto;
