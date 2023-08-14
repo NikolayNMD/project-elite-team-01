@@ -46,13 +46,13 @@
 
 .subscribe-button:hover,
 .subscribe-button:focus {
-  background-color: #061835; 
+  background-color: #061835;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .section-hero {
     background-image: url(../img/hero-mobile-jpg.jpg);
-    background-size: cover;
+    background-size: 475px;
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 140px;
@@ -143,6 +143,9 @@
     max-width: 1440px;
     padding-left: 60px;
     padding-right: 60px;
+  }
+  .section-hero {
+    padding-bottom: 0;
   }
   .main-container {
     display: flex;
