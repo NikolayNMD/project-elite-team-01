@@ -15,14 +15,14 @@
     />
     <title>Minimal</title>
     
-    <script type="module" crossorigin src="/project-elite-team-01/assets/index-6c33669c.js"></script>
-    <link rel="stylesheet" href="/project-elite-team-01/assets/index-3c459903.css">
+    <script type="module" crossorigin src="/project-elite-team-01/assets/index-f9986872.js"></script>
+    <link rel="stylesheet" href="/project-elite-team-01/assets/index-13b30b86.css">
   </head>
   <body>
     <header class="header">
   <div class="header-container container">
     <svg class="header-logo-icon" width="100" height="14">
-      <use href="/project-elite-team-01/assets/icons-01-e6b0559d.svg#icon-logo"></use>
+      <use href="/project-elite-team-01/assets/icons-01-f3e3986d.svg#icon-logo"></use>
     </svg>
     <nav class="header-navigation">
       <ul class="header-menu list">
@@ -36,7 +36,7 @@
     </nav>
     <button type="button" class="mob-menu-open" data-menu-open>
       <svg class="menu-icon" width="32" height="32">
-        <use href="/project-elite-team-01/assets/icons-01-e6b0559d.svg#icon-burger"></use>
+        <use href="/project-elite-team-01/assets/icons-01-f3e3986d.svg#icon-burger"></use>
       </svg>
     </button>
   </div>
@@ -48,7 +48,7 @@
       </svg>
       <button type="button" class="mob-menu-close" data-menu-close>
         <svg class="mob-menu-icon" width="32" height="32">
-          <use href="/project-elite-team-01/assets/icons-01-e6b0559d.svg#icon-x"></use>
+          <use href="/project-elite-team-01/assets/icons-01-f3e3986d.svg#icon-x"></use>
         </svg>
       </button>
     </div>
@@ -465,7 +465,7 @@
   </div>
 </section>
 
-    <section class="subscription">
+    <section class="subscription" id="subscription">
   <div class="container subscription-container">
     <div class="subscription-div">
       <h1 class="subscription-title text-focus-in">Newsletter</h1>
@@ -476,105 +476,80 @@
         <form class="subscription-form">
           <div class="subscription-imput-div">
             <label class="subscription-lable">
-              <input
-                type="text"
-                name="user-name"
-                id="user-name"
-                class="subscription-input"
-                placeholder="Name"
-              />
+              <input type="text" name="user-name" id="user-name" class="subscription-input" placeholder="Name"
+                minlength="2" maxlength="16" pattern="[A-Z][a-z]+" />
             </label>
           </div>
           <div class="subscription-imput-div">
             <label class="subscription-lable">
-              <input
-                type="email"
-                name="user-email"
-                class="subscription-input"
-                placeholder="E-mail"
-                id="user-email"
-                minlength="2"
-                maxlength="16"
-              />
+              <input type="email" name="user-email" class="subscription-input" placeholder="E-mail" id="user-email"
+                minlength="2" maxlength="16" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+              <svg class="subscription-error-icon" width="24" height="24">
+                <use href="/project-elite-team-01/assets/icons-01-f3e3986d.svg#icon-error-outline">
+                </use>
+              </svg>
             </label>
+
           </div>
 
           <div class="subscription-check-div">
-            <input
-              type="checkbox"
-              name="user-subscription"
-              id="user-subscription"
-              value="true"
-              class="subscription-check visually-hidden"
-            />
+            <input type="checkbox" name="user-subscription" id="user-subscription" value="true"
+              class="subscription-check visually-hidden" />
             <label for="user-subscription" class="subscription-check-text">
+
               <span class="subscription-check-span">
                 <svg class="subscription-icon" width="13" height="13">
-                  <use href="/project-elite-team-01/assets/icons-01-e6b0559d.svg#icon-check"></use>
+                  <use href="/project-elite-team-01/assets/icons-01-f3e3986d.svg#icon-check">
+
+                  </use>
                 </svg>
-              </span>
-              Agree to subscribe to the newsletter
+              </span> Agree to subscribe to the newsletter
             </label>
           </div>
-          <button type="submit" class="subscription-form-btm">Send</button>
+          <button type="submit" class="subscription-form-btm">
+            Send
+          </button>
         </form>
       </div>
     </div>
 
     <picture class="subscription-img">
-      <source
-        media="(max-width:767px)"
-        srcset="/project-elite-team-01/assets/subscription-mobile-901de67f.jpg 1x, /project-elite-team-01/assets/subscription-mobile@2x-0f7a18f3.jpg 2x"
-        width="343"
-      />
-      <source
-        media="(min-width:768px) and (max-width:1439px)"
-        srcset="/project-elite-team-01/assets/subscription-tab-f36a5145.jpg 1x, /project-elite-team-01/assets/subscription-tab@2x-0f54f17a.jpg 2x"
-        width="704"
-      />
-      <source
-        media="(min-width:1440px)"
-        srcset="/project-elite-team-01/assets/subscription-desk-4c562db1.jpg 1x, /project-elite-team-01/assets/subscription-desk@2x-0002e822.jpg 2x"
-        width="460"
-      />
-      <img
-        src="/project-elite-team-01/assets/subscription-tab-f36a5145.jpg"
-        srcset="/project-elite-team-01/assets/subscription-tab@2x-0f54f17a.jpg 2x"
-        width="704"
-        height="396"
-        alt="book table chair"
-      />
+      <source media="(max-width:767px)" srcset="/project-elite-team-01/assets/subscription-mobile-901de67f.jpg 1x, /project-elite-team-01/assets/subscription-mobile@2x-0f7a18f3.jpg 2x" width="343" />
+      <source media="(min-width:768px) and (max-width:1439px)"
+        srcset="/project-elite-team-01/assets/subscription-tab-f36a5145.jpg 1x, /project-elite-team-01/assets/subscription-tab@2x-0f54f17a.jpg 2x" width="704" />
+      <source media="(min-width:1440px)" srcset="/project-elite-team-01/assets/subscription-desk-4c562db1.jpg 1x, /project-elite-team-01/assets/subscription-desk@2x-0002e822.jpg 2x" width="460" />
+      <img src="/project-elite-team-01/assets/subscription-tab-f36a5145.jpg" srcset="/project-elite-team-01/assets/subscription-tab@2x-0f54f17a.jpg 2x" width="704" height="396"
+        alt="book table chair" />
     </picture>
   </div>
 </section>
-
     <footer class="footer" id="contacts">
   <div class="container footer-container">
     <div class="footer-social">
       <a href="#" class="footer-icon">
         <svg class="footer-logo">
-          <use href="/project-elite-team-01/assets/icons-01-e6b0559d.svg#icon-logo"></use>
+          <use href="/project-elite-team-01/assets/icons-01-f3e3986d.svg#icon-logo"></use>
         </svg>
       </a>
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a href="#" class="footer-social-link">
             <svg class="footer-social-svg">
-              <use href="/project-elite-team-01/assets/icons-01-e6b0559d.svg#icon-facebook"></use>
+              <use href="/project-elite-team-01/assets/icons-01-f3e3986d.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="footer-social-item">
           <a href="#" class="footer-social-link">
             <svg class="footer-social-svg">
-              <use href="/project-elite-team-01/assets/icons-01-e6b0559d.svg#icon-instagram"></use>
+              <use href="/project-elite-team-01/assets/icons-01-f3e3986d.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="footer-social-item">
           <a href="#" class="footer-social-link">
             <svg class="footer-social-svg">
-              <use href="/project-elite-team-01/assets/icons-01-e6b0559d.svg#icon-youtube"></use>
+              <use href="/project-elite-team-01/assets/icons-01-f3e3986d.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
