@@ -15,8 +15,8 @@
     />
     <title>Minimal</title>
     
-    <script type="module" crossorigin src="/project-elite-team-01/assets/index-cdda111c.js"></script>
-    <link rel="stylesheet" href="/project-elite-team-01/assets/index-084f1cfb.css">
+    <script type="module" crossorigin src="/project-elite-team-01/assets/index-53ef1c5c.js"></script>
+    <link rel="stylesheet" href="/project-elite-team-01/assets/index-cdeb76fa.css">
   </head>
   <body>
     <header class="header">
@@ -476,57 +476,88 @@
         <form class="subscription-form">
           <div class="subscription-imput-div">
             <label class="subscription-lable">
-              <input type="text" name="user-name" id="user-name" class="subscription-input" placeholder="Name"
-                minlength="2" maxlength="16" pattern="[A-Z][a-z]+" />
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="subscription-input"
+                placeholder="Name"
+                minlength="2"
+                maxlength="16"
+                pattern="[a-zA-Z\u0400-\u0ff]+"
+              />
               <svg class="subscription-error-icon" width="24" height="24">
-                <use href="/project-elite-team-01/assets/icons-01-f3e3986d.svg#icon-error-outline">
-                </use>
+                <use href="/project-elite-team-01/assets/icons-01-f3e3986d.svg#icon-error-outline"></use>
               </svg>
             </label>
           </div>
           <div class="subscription-imput-div">
             <label class="subscription-lable">
-              <input type="email" name="user-email" class="subscription-input" placeholder="E-mail" id="user-email"
-                minlength="2" maxlength="16" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+              <input
+                type="email"
+                name="user-email"
+                class="subscription-input"
+                placeholder="E-mail"
+                id="user-email"
+                minlength="2"
+                maxlength="16"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              />
               <svg class="subscription-error-icon" width="24" height="24">
-                <use href="/project-elite-team-01/assets/icons-01-f3e3986d.svg#icon-error-outline">
-                </use>
+                <use href="/project-elite-team-01/assets/icons-01-f3e3986d.svg#icon-error-outline"></use>
               </svg>
             </label>
-
           </div>
 
           <div class="subscription-check-div">
-            <input type="checkbox" name="user-subscription" id="user-subscription" value="true"
-              class="subscription-check visually-hidden" />
+            <input
+              type="checkbox"
+              name="user-subscription"
+              id="user-subscription"
+              value="true"
+              class="subscription-check visually-hidden"
+            />
             <label for="user-subscription" class="subscription-check-text">
-
               <span class="subscription-check-span">
                 <svg class="subscription-icon" width="13" height="13">
-                  <use href="/project-elite-team-01/assets/icons-01-f3e3986d.svg#icon-check">
-
-                  </use>
+                  <use href="/project-elite-team-01/assets/icons-01-f3e3986d.svg#icon-check"></use>
                 </svg>
-              </span> Agree to subscribe to the newsletter
+              </span>
+              Agree to subscribe to the newsletter
             </label>
           </div>
-          <button type="submit" class="subscription-form-btm">
-            Send
-          </button>
+          <button type="submit" class="subscription-form-btm">Send</button>
         </form>
       </div>
     </div>
 
     <picture class="subscription-img">
-      <source media="(max-width:767px)" srcset="/project-elite-team-01/assets/subscription-mobile-901de67f.jpg 1x, /project-elite-team-01/assets/subscription-mobile@2x-0f7a18f3.jpg 2x" width="343" />
-      <source media="(min-width:768px) and (max-width:1439px)"
-        srcset="/project-elite-team-01/assets/subscription-tab-f36a5145.jpg 1x, /project-elite-team-01/assets/subscription-tab@2x-0f54f17a.jpg 2x" width="704" />
-      <source media="(min-width:1440px)" srcset="/project-elite-team-01/assets/subscription-desk-4c562db1.jpg 1x, /project-elite-team-01/assets/subscription-desk@2x-0002e822.jpg 2x" width="460" />
-      <img src="/project-elite-team-01/assets/subscription-tab-f36a5145.jpg" srcset="/project-elite-team-01/assets/subscription-tab@2x-0f54f17a.jpg 2x" width="704" height="396"
-        alt="book table chair" />
+      <source
+        media="(max-width:767px)"
+        srcset="/project-elite-team-01/assets/subscription-mobile-901de67f.jpg 1x, /project-elite-team-01/assets/subscription-mobile@2x-0f7a18f3.jpg 2x"
+        width="343"
+      />
+      <source
+        media="(min-width:768px) and (max-width:1439px)"
+        srcset="/project-elite-team-01/assets/subscription-tab-f36a5145.jpg 1x, /project-elite-team-01/assets/subscription-tab@2x-0f54f17a.jpg 2x"
+        width="704"
+      />
+      <source
+        media="(min-width:1440px)"
+        srcset="/project-elite-team-01/assets/subscription-desk-4c562db1.jpg 1x, /project-elite-team-01/assets/subscription-desk@2x-0002e822.jpg 2x"
+        width="460"
+      />
+      <img
+        src="/project-elite-team-01/assets/subscription-tab-f36a5145.jpg"
+        srcset="/project-elite-team-01/assets/subscription-tab@2x-0f54f17a.jpg 2x"
+        width="704"
+        height="396"
+        alt="book table chair"
+      />
     </picture>
   </div>
 </section>
+
     <footer class="footer" id="contacts">
   <div class="container footer-container">
     <div class="footer-social">
