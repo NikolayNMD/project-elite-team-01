@@ -11,6 +11,10 @@
   overflow: hidden;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .header {
   background-color: var(--light-blue-color);
 }
@@ -54,11 +58,14 @@
   z-index: 2;
 }
 
+.mob-header {
+  background-color: var(--light-blue-color);
+}
+
 .mob-menu-header {
   padding: 28px 16px;
   display: flex;
   align-items: center;
-  background-color: var(--light-blue-color);
 }
 
 .mob-logo-icon {
@@ -81,9 +88,10 @@
 }
 
 .mob-menu-navigation {
-  width: 109px;
+  width: 100%;
   margin-top: 114px;
-  padding: 8px;
+  max-height: 359px;
+  overflow-y: auto;
 }
 
 .mob-menu-list {
@@ -113,8 +121,8 @@
   }
 
   .header-logo-icon {
-    width: 127px;
-    height: 16px;
+    width: 128px;
+    height: 17px;
   }
 
   .mob-menu-open {
@@ -132,8 +140,8 @@
   }
 
   .mob-logo-icon {
-    width: 127px;
-    height: 16px;
+    width: 128px;
+    height: 17px;
   }
 
   .mob-menu-close {
@@ -147,9 +155,7 @@
   }
 
   .mob-menu-navigation {
-    /* width: 120px; */
     margin-top: 150px;
-    padding: 8px;
   }
 
   .mob-menu-item {
@@ -192,5 +198,7 @@
 
   .header-menu-item {
     font-weight: 400;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }
