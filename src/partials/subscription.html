@@ -9,59 +9,90 @@
         <form class="subscription-form">
           <div class="subscription-imput-div">
             <label class="subscription-lable">
-              <input type="text" name="user-name" id="user-name" class="subscription-input" placeholder="Name"
-                minlength="2" maxlength="16" pattern="[A-Z][a-z]+" />
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="subscription-input"
+                placeholder="Name"
+                minlength="2"
+                maxlength="16"
+                pattern="[a-zA-Z\u0400-\u0ff]+"
+              />
               <svg class="subscription-error-icon" width="24" height="24">
-                <use href="./img/icons-01.svg#icon-error-outline">
-                </use>
+                <use href="./img/icons-01.svg#icon-error-outline"></use>
               </svg>
             </label>
           </div>
           <div class="subscription-imput-div">
             <label class="subscription-lable">
-              <input type="email" name="user-email" class="subscription-input" placeholder="E-mail" id="user-email"
-                minlength="2" maxlength="16" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+              <input
+                type="email"
+                name="user-email"
+                class="subscription-input"
+                placeholder="E-mail"
+                id="user-email"
+                minlength="2"
+                maxlength="16"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              />
               <svg class="subscription-error-icon" width="24" height="24">
-                <use href="./img/icons-01.svg#icon-error-outline">
-                </use>
+                <use href="./img/icons-01.svg#icon-error-outline"></use>
               </svg>
             </label>
-
           </div>
 
           <div class="subscription-check-div">
-            <input type="checkbox" name="user-subscription" id="user-subscription" value="true"
-              class="subscription-check visually-hidden" />
+            <input
+              type="checkbox"
+              name="user-subscription"
+              id="user-subscription"
+              value="true"
+              class="subscription-check visually-hidden"
+            />
             <label for="user-subscription" class="subscription-check-text">
-
               <span class="subscription-check-span">
                 <svg class="subscription-icon" width="13" height="13">
-                  <use href="./img/icons-01.svg#icon-check">
-
-                  </use>
+                  <use href="./img/icons-01.svg#icon-check"></use>
                 </svg>
-              </span> Agree to subscribe to the newsletter
+              </span>
+              Agree to subscribe to the newsletter
             </label>
           </div>
-          <button type="submit" class="subscription-form-btm">
-            Send
-          </button>
+          <button type="submit" class="subscription-form-btm">Send</button>
         </form>
       </div>
     </div>
 
     <picture class="subscription-img">
-      <source media="(max-width:767px)" srcset="
+      <source
+        media="(max-width:767px)"
+        srcset="
           ./img/subscription-mobile.jpg    1x,
           ./img/subscription-mobile@2x.jpg 2x
-        " width="343" />
-      <source media="(min-width:768px) and (max-width:1439px)"
-        srcset="./img/subscription-tab.jpg 1x, ./img/subscription-tab@2x.jpg 2x" width="704" />
-      <source media="(min-width:1440px)" srcset="
+        "
+        width="343"
+      />
+      <source
+        media="(min-width:768px) and (max-width:1439px)"
+        srcset="./img/subscription-tab.jpg 1x, ./img/subscription-tab@2x.jpg 2x"
+        width="704"
+      />
+      <source
+        media="(min-width:1440px)"
+        srcset="
           ./img/subscription-desk.jpg    1x,
-          ./img/subscription-desk@2x.jpg 2x" width="460" />
-      <img src="./img/subscription-tab.jpg" srcset="./img/subscription-tab@2x.jpg 2x" width="704" height="396"
-        alt="book table chair" />
+          ./img/subscription-desk@2x.jpg 2x
+        "
+        width="460"
+      />
+      <img
+        src="./img/subscription-tab.jpg"
+        srcset="./img/subscription-tab@2x.jpg 2x"
+        width="704"
+        height="396"
+        alt="book table chair"
+      />
     </picture>
   </div>
 </section>
