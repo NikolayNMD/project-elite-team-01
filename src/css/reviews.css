@@ -1,6 +1,6 @@
 .reviews {
   background-color: var(--light-blue-color);
-  padding: 36px 16px;
+  padding: 36px 0;
 }
 
 .reviews-logo {
@@ -113,6 +113,7 @@
     font-weight: 700;
     line-height: 2.25;
     text-transform: uppercase;
+    margin-bottom: 4px;
   }
   .clients-data {
     color: var(--blue-color);
