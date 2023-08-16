@@ -1,4 +1,4 @@
-.is-hidden {
+/* .is-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -9,7 +9,7 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 .no-scroll {
   overflow: hidden;
@@ -55,7 +55,14 @@
   width: 100vw;
   height: 100vh;
   background-color: white;
+  transform: translateX(0);
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
+  overflow-y: auto;
+}
+
+.mob-menu.is-hidden {
+  transform: translateX(-100%);
 }
 
 .mob-header {
@@ -91,7 +98,6 @@
   width: 100%;
   margin-top: 114px;
   max-height: 359px;
-  overflow-y: auto;
 }
 
 .mob-menu-list {

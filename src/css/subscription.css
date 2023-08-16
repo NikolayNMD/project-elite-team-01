@@ -276,6 +276,10 @@
     margin-left: 0;
   }
 
+  .subscription-input:invalid + .subscription-error-icon {
+    left: 71%;
+  }
+
   .subscription-check-text {
     font-size: 18px;
   }
@@ -333,6 +337,10 @@
   .subscription-form-btm:hover,
   .subscription-form-btm:focus {
     background-color: #061835;
+  }
+
+  .subscription-input:invalid + .subscription-error-icon {
+    left: 93%;
   }
 
   .subscription-img {
